@@ -59,7 +59,7 @@ before_script:
   - phpenv config-rm xdebug.ini
   - composer self-update
   - composer update $COMPOSER_FLAGS
-  - if [[ $SYMFONY__PHPCR__TRANSPORT = jackrabbit ]]; then composer require jackalope/jackalope-jackrabbit:~1.2 ; fi
+  - if [[ $SYMFONY__PHPCR__TRANSPORT = jackrabbit ]]; then composer require jackalope/jackalope-jackrabbit:^1.2 ; fi
 
 script: 
   - time ./bin/runtests -i -a $TEST_FLAGS

@@ -14,7 +14,7 @@ namespace Sulu\Bundle\RouteBundle\Tests\Unit\Generator;
 use Sulu\Bundle\RouteBundle\Generator\RouteGenerator;
 use Sulu\Bundle\RouteBundle\Generator\TokenProviderInterface;
 use Sulu\Bundle\RouteBundle\Model\RoutableInterface;
-use Symfony\Cmf\Bundle\CoreBundle\Slugifier\SlugifierInterface;
+use Symfony\Cmf\Api\Slugifier\SlugifierInterface;
 
 class RouteGeneratorTest extends \PHPUnit_Framework_TestCase
 {

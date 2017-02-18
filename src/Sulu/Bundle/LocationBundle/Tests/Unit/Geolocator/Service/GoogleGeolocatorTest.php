@@ -83,20 +83,8 @@ class GoogleGeolocatorTest extends \PHPUnit_Framework_TestCase
 
     public function testApiKey()
     {
-        $mockHandler = new MockHandler([new Response(200, [], '{"status": "OK","results":[]}')]);
-        $stack = HandlerStack::create($mockHandler);
-        $stack->push(
-            Middleware::mapRequest(
-                function (Request $request) {
-                    $this->assertContains('key=foobar', $request->getUri()->getQuery());
-
-                    return $request;
-                }
-            )
-        );
-
-        $client = new Client(['handler' => $stack]);
-        $geolocator = new GoogleGeolocator($client, 'foobar');
+        $this->mockPlugin->append(new Response(200, null, '{"status": "OK","results":[]}'));
+        $geolocator = new GoogleGeolocator($this->client, 'foobar');
         $geolocator->locate('foobar');
     }
 }
