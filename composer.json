@@ -24,6 +24,10 @@
         },
         {
             "type": "vcs",
+            "url": "git@github.com:yukoff/massive-search-bundle.git"
+        },
+        {
+            "type": "vcs",
             "url": "git@github.com:yukoff/zendframework-zendsearch.git"
         }
     ],
@@ -42,7 +46,7 @@
         "friendsofsymfony/rest-bundle": "^1.6",
         "guzzlehttp/guzzle": "^6.2",
         "imagine/imagine": "^0.6.1",
-        "massive/search-bundle": "~0.16",
+        "massive/search-bundle": "dev-develop",
         "sensio/framework-extra-bundle": "^3.0",
         "sulu/document-manager": "dev-develop",
         "stof/doctrine-extensions-bundle": "^1.2.2@dev",
