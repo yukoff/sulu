@@ -38,7 +38,7 @@ class RequestListener
     }
 
     /**
-     * {@inheritdoc}
+     * @param GetResponseEvent $event
      */
     public function onRequest(GetResponseEvent $event)
     {

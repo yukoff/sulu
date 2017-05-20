@@ -52,6 +52,11 @@ class UpdateResponseSubscriberTest extends \PHPUnit_Framework_TestCase
      */
     private $filterResponseEvent;
 
+    /**
+     * @var GetResponseEvent
+     */
+    private $getResponseEvent;
+
     public function setUp()
     {
         parent::setUp();

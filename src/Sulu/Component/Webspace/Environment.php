@@ -151,7 +151,9 @@ class Environment
     }
 
     /**
-     * {@inheritdoc}
+     * @param int|null $depth
+     *
+     * @return array
      */
     public function toArray($depth = null)
     {

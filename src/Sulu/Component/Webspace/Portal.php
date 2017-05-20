@@ -139,6 +139,13 @@ class Portal
         return $this->localizations;
     }
 
+    /**
+     * @param $locale
+     *
+     * @return Localization
+     *
+     * @throws PortalLocalizationNotFoundException
+     */
     public function getLocalization($locale)
     {
         foreach ($this->getLocalizations() as $localization) {
@@ -255,7 +262,9 @@ class Portal
     }
 
     /**
-     * {@inheritdoc}
+     * @param int|null $depth
+     *
+     * @return array
      */
     public function toArray($depth = null)
     {
