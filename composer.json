@@ -48,7 +48,7 @@
         "imagine/imagine": "^0.6.1",
         "massive/search-bundle": "dev-develop",
         "sensio/framework-extra-bundle": "^3.0",
-        "sulu/document-manager": "dev-develop",
+        "sulu/document-manager": "dev-feature/transliterating-slugifier as dev-develop",
         "stof/doctrine-extensions-bundle": "^1.2.2@dev",
         "gedmo/doctrine-extensions": "^2.4",
         "symfony-cmf/routing-bundle": "^1.2 || ^2.0",

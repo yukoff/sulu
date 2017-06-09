@@ -27,7 +27,7 @@ matrix:
         - TEST_FLAGS="--jackrabbit-restart"
     - php: 7.0
       env:
-        - COMPOSER_FLAGS="--prefer-dist --no-interaction
+        - COMPOSER_FLAGS="--prefer-dist --no-interaction"
         - SYMFONY__DATABASE__DRIVER=pdo_pgsql
         - SYMFONY__DATABASE__USER=postgres
         - SYMFONY__DATABASE__PASSWORD=postgres
